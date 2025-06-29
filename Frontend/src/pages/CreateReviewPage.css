@@ -1,0 +1,23 @@
+/* CreateReviewPage.css */
+/* Fix for dropdown menu specifically on this page */
+nav .dropdown:hover .dropdown-menu {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    z-index: 1000 !important;
+  }
+  
+  /* Ensure navigation stays above hero section */
+  header {
+    position: relative;
+    z-index: 100 !important;
+  }
+  
+  /* Reset z-index for hero section elements */
+  .hero-section {
+    z-index: 0 !important;
+  }
+  
+  .hero-section * {
+    z-index: auto !important;
+  }
